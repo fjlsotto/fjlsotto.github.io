@@ -3,7 +3,7 @@
 Welcome to my portfolio!  
 This website is built to showcase my work as a **Data Analyst** and/or **Data Scientist**, highlighting my technical skills, projects, and insights.
 
-Live site: [https://epjee.github.io](https://epjee.github.io)
+Live site: [https://fjlsotto.github.io](https://fjlsotto.github.io)
 
 ---
 
