@@ -1,7 +1,7 @@
 # 🌐 Personal Portfolio – Francis Sotto
 
 Welcome to my portfolio!  
-This website is built to showcase my work as a **Data Professional**, highlighting my technical skills and insights.
+This website is built to showcase my work as a **Data Professional**, highlighting my technical expertise, analytical ability, and data storytelling skills.
 
 Live site: [https://fjlsotto.github.io](https://fjlsotto.github.io)
 
@@ -34,7 +34,7 @@ Live site: [https://fjlsotto.github.io](https://fjlsotto.github.io)
 Feel free to reach out or connect:
 
 - [LinkedIn](https://www.linkedin.com/in/francisjay)
-- [GitHub](https://github.com/epjee)
+- [GitHub](https://github.com/fjlsotto)
 - [Email](mailto:fjlsotto@gmail.com)
 
 ---
