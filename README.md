@@ -1,7 +1,7 @@
 # 🌐 Personal Portfolio – Francis Sotto
 
 Welcome to my portfolio!  
-This website is built to showcase my work as a **Data Analyst** and/or **Data Scientist**, highlighting my technical skills, projects, and insights.
+This website is built to showcase my work as a **Data Professional**, highlighting my technical skills and insights.
 
 Live site: [https://fjlsotto.github.io](https://fjlsotto.github.io)
 
