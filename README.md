@@ -83,7 +83,7 @@ python3 -m http.server 3000
 ## Contact
 
 - [fjlsotto@gmail.com](mailto:fjlsotto@gmail.com)
-- [LinkedIn](https://www.linkedin.com/in/fjlsotto)
+- [LinkedIn](https://www.linkedin.com/in/francisjay)
 - [GitHub](https://github.com/fjlsotto)
 
 ---
