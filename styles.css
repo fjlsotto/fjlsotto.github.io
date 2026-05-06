@@ -315,11 +315,11 @@ em { font-style: italic; }
 
 /* ===== PROJECTS ===== */
 .project-filters {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 0.5rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 2rem;
+  max-width: 560px;
+  margin: 0 auto 2rem;
 }
 .filter-btn {
   font-family: inherit;
