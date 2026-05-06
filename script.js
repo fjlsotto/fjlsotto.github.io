@@ -81,5 +81,9 @@ document.querySelectorAll('.skills-grid, .projects-grid').forEach(grid => {
   });
 });
 
+/* ===== DYNAMIC YEAR ===== */
+const yearEl = document.getElementById('year');
+if (yearEl) yearEl.textContent = new Date().getFullYear();
+
 /* ===== INIT ===== */
 highlightActiveSection();
