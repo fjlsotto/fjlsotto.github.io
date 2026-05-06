@@ -61,9 +61,15 @@
         <h2>What I've built</h2>
       </div>
 
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
+        <button class="filter-btn" data-filter="analytics">Analytics</button>
+      </div>
+
       <div class="projects-grid">
         <!-- Featured -->
-        <div class="project-card project-featured reveal">
+        <div class="project-card project-featured reveal" data-category="machine-learning">
           <div class="project-card-inner">
             <div class="project-top">
               <span class="project-badge">Machine Learning</span>
@@ -79,7 +85,7 @@
           </div>
         </div>
 
-        <div class="project-card project-featured reveal">
+        <div class="project-card project-featured reveal" data-category="analytics">
           <div class="project-card-inner">
             <div class="project-top">
               <span class="project-badge">Analytics</span>
@@ -96,7 +102,7 @@
         </div>
 
         <!-- Placeholders -->
-        <div class="project-card project-placeholder reveal">
+        <div class="project-card project-placeholder reveal" data-category="coming-soon">
           <div class="project-card-inner">
             <div class="project-top">
               <span class="project-badge badge-muted">Coming Soon</span>
@@ -109,7 +115,7 @@
           </div>
         </div>
 
-        <div class="project-card project-placeholder reveal">
+        <div class="project-card project-placeholder reveal" data-category="coming-soon">
           <div class="project-card-inner">
             <div class="project-top">
               <span class="project-badge badge-muted">Coming Soon</span>
@@ -209,23 +215,8 @@
             </a>
           </div>
         </div>
-        <div class="about-stats-block reveal">
-          <div class="stat-card">
-            <span class="stat-num">3+</span>
-            <span class="stat-label">Years Experience</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-num">15+</span>
-            <span class="stat-label">Dashboards Built</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-num">3</span>
-            <span class="stat-label">Industries</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-num">30%</span>
-            <span class="stat-label">Avg. Conversion Lift</span>
-          </div>
+        <div class="about-photo reveal">
+          <img src="assets/dp.jpg" alt="Francis Jay Sotto" />
         </div>
       </div>
     </div>
@@ -335,17 +326,14 @@
           <a href="mailto:fjlsotto@gmail.com" class="contact-card">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
             <span class="cc-label">Email</span>
-            <span class="cc-val">fjlsotto@gmail.com</span>
           </a>
           <a href="https://www.linkedin.com/in/francisjay" target="_blank" rel="noopener" class="contact-card">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
             <span class="cc-label">LinkedIn</span>
-            <span class="cc-val">fjlsotto</span>
           </a>
           <a href="https://github.com/fjlsotto" target="_blank" rel="noopener" class="contact-card">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             <span class="cc-label">GitHub</span>
-            <span class="cc-val">fjlsotto</span>
           </a>
         </div>
       </div>
