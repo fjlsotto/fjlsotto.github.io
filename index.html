@@ -3,57 +3,365 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Francis Sotto | Data Analyst & Scientist</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 2rem;
-      background-color: #f5f5f5;
-      color: #333;
-    }
-    .container {
-      max-width: 800px;
-      margin: auto;
-      background: white;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    h1 {
-      color: #2c3e50;
-    }
-    a {
-      color: #1e90ff;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .links {
-      margin-top: 1rem;
-    }
-  </style>
+  <title>Francis Jay Sotto | Data Professional</title>
+  <meta name="description" content="Portfolio of Francis Jay Sotto — Analytics Engineer and Data Professional specializing in data solutions, dashboards, and machine learning." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <div class="container">
-    <h1>Francis Jay Sotto</h1>
-    <p><strong>Data Analyst | Aspiring Data Scientist</strong></p>
-    <p>I turn data into actionable insights using Python, SQL, and visualization tools like Tableau and Power BI.</p>
 
-    <h2>🔍 Projects</h2>
-    <ul>
-      <li><a href="https://github.com/yourusername/project-1">Credit Card Fraud Detection</a></li>
-      <li><a href="https://github.com/yourusername/project-2">Loan Default Prediction</a></li>
-      <li><a href="https://github.com/yourusername/project-3">Marketing Mix Modeling</a></li>
-    </ul>
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Home">FJ</a>
 
-    <h2>📫 Connect with Me</h2>
-    <div class="links">
-      <a href="https://www.linkedin.com/in/francisjay" target="_blank">LinkedIn</a> |
-      <a href="mailto:fjlsotto@gmail.com">Email</a> |
-      <a href="https://github.com/epjee" target="_blank">GitHub</a>
+      <nav class="nav-links" id="nav-links" role="navigation">
+        <a href="#home">home</a>
+        <a href="#projects">projects</a>
+        <a href="#skills">skills</a>
+        <a href="#about">about</a>
+        <a href="#experience">experience</a>
+        <a href="#contact">contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="Sotto_Resume.pdf" target="_blank" class="btn btn-outline-nav">Resume</a>
+        <a href="#contact" class="btn btn-filled-nav">Hire Me</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Data Professional &amp; Statistician</p>
+      <h1 class="hero-title">Francis Jay<br>Sotto</h1>
+      <p class="hero-sub">Building data solutions that drive business growth and better decision-making — across analytics engineering, BI, and data science.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-accent-hero">View Portfolio</a>
+        <a href="#contact" class="btn btn-ghost-hero">Contact Me</a>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Portfolio</span>
+        <h2>What I've built</h2>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Featured -->
+        <div class="project-card project-featured reveal">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <span class="project-badge">Machine Learning</span>
+              <a href="#" aria-label="View on GitHub" class="icon-link">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+            <h3>Loan Default Prediction</h3>
+            <p>Developed a solution to predict loan defaults, enabling proactive credit risk management through gradient-boosted classification models with feature engineering and threshold optimization for business-specific recall targets.</p>
+            <div class="project-tags">
+              <span>Python</span><span>scikit-learn</span><span>XGBoost</span><span>SQL</span><span>Jupyter</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card project-featured reveal">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <span class="project-badge">Analytics</span>
+              <a href="#" aria-label="View on GitHub" class="icon-link">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+            <h3>Customer Churn Analysis</h3>
+            <p>Built a model to identify at-risk customers and uncover churn drivers, enabling targeted retention strategies and prioritized intervention at scale through propensity scoring and cohort segmentation.</p>
+            <div class="project-tags">
+              <span>Python</span><span>pandas</span><span>LightGBM</span><span>Tableau</span><span>SQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Placeholders -->
+        <div class="project-card project-placeholder reveal">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <span class="project-badge badge-muted">Coming Soon</span>
+            </div>
+            <h3>Project Title</h3>
+            <p>A brief description of this project and the problem it solves. Placeholder for an upcoming case study.</p>
+            <div class="project-tags">
+              <span>Tag 1</span><span>Tag 2</span><span>Tag 3</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card project-placeholder reveal">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <span class="project-badge badge-muted">Coming Soon</span>
+            </div>
+            <h3>Project Title</h3>
+            <p>A brief description of this project and the problem it solves. Placeholder for an upcoming case study.</p>
+            <div class="project-tags">
+              <span>Tag 1</span><span>Tag 2</span><span>Tag 3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Skills</span>
+        <h2>Tech stack &amp; expertise</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg>
+          </div>
+          <h3>ETL / ELT &amp; Data Engineering</h3>
+          <div class="skill-tags">
+            <span>dbt</span><span>Snowflake</span><span>BigQuery</span><span>Redshift</span>
+            <span>Databricks</span><span>Fivetran</span><span>Airbyte</span><span>Snowpipe</span>
+            <span>Stitch</span><span>Rudderstack</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <h3>Analytics &amp; Business Intelligence</h3>
+          <div class="skill-tags">
+            <span>Tableau</span><span>Power BI</span><span>Looker Studio</span><span>Hex</span>
+            <span>Sigma</span><span>Metabase</span><span>Mode</span><span>Qlik</span>
+            <span>GA4</span><span>Jupyter</span><span>Excel</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Data Science &amp; Programming</h3>
+          <div class="skill-tags">
+            <span>Python</span><span>SQL</span><span>R</span><span>PySpark</span>
+            <span>pandas</span><span>scikit-learn</span><span>LightGBM</span><span>XGBoost</span>
+            <span>TensorFlow</span><span>PyTorch</span><span>Transformers</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>Marketing &amp; Business Analytics</h3>
+          <div class="skill-tags">
+            <span>Marketing Mix Modeling</span><span>Attribution</span>
+            <span>Sentiment Analysis</span><span>A/B Testing</span>
+            <span>Cohort Analysis</span><span>Propensity Modeling</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-flex">
+        <div class="about-text reveal">
+          <span class="section-label">About Me</span>
+          <h2>The person<br>behind the data</h2>
+          <p>I'm a data professional specializing in building data solutions that drive business growth and better decision-making. With experience across fintech, banking, and SaaS, I thrive at the intersection of engineering and analytics — translating raw data into reliable, business-ready insights.</p>
+          <p>I've worked with global teams and am comfortable navigating ambiguity to deliver high-impact solutions. Graduated <em>summa cum laude</em> in Statistics from the University of the Philippines Los Baños.</p>
+          <div class="about-actions">
+            <a href="mailto:fjlsotto@gmail.com" class="contact-chip">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              fjlsotto@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/fjlsotto" target="_blank" rel="noopener" class="contact-chip">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/fjlsotto" target="_blank" rel="noopener" class="contact-chip">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div class="about-stats-block reveal">
+          <div class="stat-card">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">15+</span>
+            <span class="stat-label">Dashboards Built</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">3</span>
+            <span class="stat-label">Industries</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">30%</span>
+            <span class="stat-label">Avg. Conversion Lift</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Experience</span>
+        <h2>Career timeline</h2>
+        <p class="section-sub">Hover or tap each role for details.</p>
+      </div>
+
+      <div class="exp-list">
+
+        <div class="exp-item reveal">
+          <div class="exp-summary">
+            <div class="exp-dot-wrap">
+              <div class="exp-dot"></div>
+            </div>
+            <div class="exp-meta">
+              <span class="exp-company">Karbon</span>
+              <span class="exp-role">Analytics Engineer</span>
+            </div>
+            <span class="exp-period">2026 – Present</span>
+            <span class="exp-loc">California, US</span>
+            <span class="exp-chevron" aria-hidden="true">›</span>
+          </div>
+          <div class="exp-detail">
+            <p class="exp-desc">Building and scaling analytics solutions across the modern data stack — designing data models, automating pipelines, and deploying dashboards that improve stakeholder reporting efficiency and support cross-functional decision-making.</p>
+            <div class="exp-tags"><span>dbt</span><span>Tableau</span><span>Snowflake</span><span>SQL</span></div>
+          </div>
+        </div>
+
+        <div class="exp-item reveal">
+          <div class="exp-summary">
+            <div class="exp-dot-wrap">
+              <div class="exp-dot"></div>
+            </div>
+            <div class="exp-meta">
+              <span class="exp-company">Maya</span>
+              <span class="exp-role">Senior Data Analyst</span>
+            </div>
+            <span class="exp-period">2024 – 2026</span>
+            <span class="exp-loc">Mandaluyong, PH</span>
+            <span class="exp-chevron" aria-hidden="true">›</span>
+          </div>
+          <div class="exp-detail">
+            <p class="exp-desc">Led data-driven initiatives across sales and marketing in fintech — building propensity models, running A/B tests, and developing data marts that improved campaign conversion rates and enabled faster, more strategic decision-making.</p>
+            <div class="exp-tags"><span>Python</span><span>SQL</span><span>A/B Testing</span><span>Propensity Modeling</span></div>
+          </div>
+        </div>
+
+        <div class="exp-item reveal">
+          <div class="exp-summary">
+            <div class="exp-dot-wrap">
+              <div class="exp-dot"></div>
+            </div>
+            <div class="exp-meta">
+              <span class="exp-company">UnionBank</span>
+              <span class="exp-role">BI Analyst</span>
+            </div>
+            <span class="exp-period">2023 – 2024</span>
+            <span class="exp-loc">Quezon City, PH</span>
+            <span class="exp-chevron" aria-hidden="true">›</span>
+          </div>
+          <div class="exp-detail">
+            <p class="exp-desc">Created and enhanced business intelligence dashboards and automated reporting pipelines for the bank's cards and loans tower — delivering forecasting, cost, and compliance insights to stakeholders while drastically reducing manual data extraction time.</p>
+            <div class="exp-tags"><span>SQL</span><span>Power BI</span><span>Python</span><span>Forecasting</span></div>
+          </div>
+        </div>
+
+        <div class="exp-item reveal">
+          <div class="exp-summary">
+            <div class="exp-dot-wrap">
+              <div class="exp-dot"></div>
+            </div>
+            <div class="exp-meta">
+              <span class="exp-company">Kinesso – IPG Mediabrands</span>
+              <span class="exp-role">Marketing Analytics Intern</span>
+            </div>
+            <span class="exp-period">2022</span>
+            <span class="exp-loc">Taguig, PH</span>
+            <span class="exp-chevron" aria-hidden="true">›</span>
+          </div>
+          <div class="exp-detail">
+            <p class="exp-desc">Performed marketing mix modeling, attribution, and sentiment analysis to assess campaign effectiveness and estimate ROI across various advertising channels, supporting client strategy with data-backed recommendations.</p>
+            <div class="exp-tags"><span>Marketing Mix Modeling</span><span>Sentiment Analysis</span><span>Attribution</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-wrap">
+        <div class="section-header reveal">
+          <span class="section-label">Contact</span>
+          <h2>Let's work together</h2>
+          <p class="section-sub">Whether you have a project in mind, a role to fill, or just want to talk data — I'd love to hear from you.</p>
+        </div>
+        <div class="contact-cards reveal">
+          <a href="mailto:fjlsotto@gmail.com" class="contact-card">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <span class="cc-label">Email</span>
+            <span class="cc-val">fjlsotto@gmail.com</span>
+          </a>
+          <a href="https://www.linkedin.com/in/fjlsotto" target="_blank" rel="noopener" class="contact-card">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <span class="cc-label">LinkedIn</span>
+            <span class="cc-val">fjlsotto</span>
+          </a>
+          <a href="https://github.com/fjlsotto" target="_blank" rel="noopener" class="contact-card">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <span class="cc-label">GitHub</span>
+            <span class="cc-val">fjlsotto</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#home" class="footer-logo" aria-label="Back to top">FJ</a>
+        <p class="footer-copy">© 2026 Francis Jay Sotto</p>
+        <p class="footer-edu">BS Statistics, summa cum laude · University of the Philippines Los Baños</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
