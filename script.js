@@ -81,6 +81,20 @@ document.querySelectorAll('.skills-grid, .projects-grid').forEach(grid => {
   });
 });
 
+/* ===== PROJECT FILTERS ===== */
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+    document.querySelectorAll('.projects-grid .project-card').forEach(card => {
+      const cat = card.dataset.category;
+      const show = filter === 'all' || cat === filter || (filter === 'all' && cat === 'coming-soon');
+      card.classList.toggle('hidden', !show);
+    });
+  });
+});
+
 /* ===== DYNAMIC YEAR ===== */
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
