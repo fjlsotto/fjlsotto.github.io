@@ -87,10 +87,6 @@ em { font-style: italic; }
 }
 
 .sidebar-top {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1rem;
   padding-bottom: 2rem;
   border-bottom: 1px solid var(--border-light);
 }
@@ -315,10 +311,9 @@ em { font-style: italic; }
   min-height: 100svh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  text-align: center;
-  padding: 5rem 2rem;
+  padding: 5rem 3rem 5rem 4rem;
   position: relative;
   overflow: hidden;
 }
@@ -330,47 +325,47 @@ em { font-style: italic; }
     linear-gradient(rgba(92,124,137,0.06) 1px, transparent 1px),
     linear-gradient(90deg, rgba(92,124,137,0.06) 1px, transparent 1px);
   background-size: 60px 60px;
-  mask-image: radial-gradient(ellipse 80% 60% at 50% 50%, black 40%, transparent 100%);
+  mask-image: radial-gradient(ellipse 80% 70% at 30% 50%, black 30%, transparent 100%);
   pointer-events: none;
 }
 
 .hero-content {
   position: relative;
-  max-width: 700px;
+  max-width: 620px;
 }
 
 .hero-eyebrow {
   display: inline-block;
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 2.5px;
   text-transform: uppercase;
   color: var(--accent-bright);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .hero-title {
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: clamp(3.5rem, 8vw, 6rem);
+  font-size: clamp(3rem, 7vw, 5.5rem);
   font-weight: 800;
   line-height: 1.06;
   color: #fff;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   letter-spacing: -1px;
 }
 
 .hero-sub {
-  font-size: 1.025rem;
+  font-size: 0.975rem;
   color: var(--text-muted);
-  max-width: 500px;
-  margin: 0 auto 2.75rem;
+  max-width: 480px;
+  margin: 0 0 2.25rem;
   line-height: 1.75;
 }
 
 .hero-actions {
   display: flex;
-  gap: 1rem;
-  justify-content: center;
+  gap: 0.875rem;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
@@ -393,37 +388,37 @@ em { font-style: italic; }
 }
 
 /* ===== SECTION SHELL ===== */
-.section { padding: 6.5rem 2rem; }
+.section { padding: 5rem 4rem 5rem 4rem; }
 .section-alt { background: var(--bg-alt); }
 
 .container {
-  max-width: 1060px;
+  max-width: 980px;
   margin: 0 auto;
 }
 
 .section-header {
-  text-align: center;
-  margin-bottom: 4rem;
+  text-align: left;
+  margin-bottom: 2.5rem;
 }
 .section-label {
   display: inline-block;
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 600;
   letter-spacing: 2.5px;
   text-transform: uppercase;
   color: var(--accent-bright);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 .section-header h2 {
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
   font-weight: 700;
   color: #fff;
   line-height: 1.2;
 }
 .section-sub {
-  margin-top: 0.75rem;
-  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  font-size: 0.825rem;
   color: var(--text-muted);
 }
 
@@ -794,7 +789,7 @@ em { font-style: italic; }
   align-items: center;
   gap: 2.5rem;
 }
-.contact-wrap .section-header { margin-bottom: 0; }
+.contact-wrap .section-header { margin-bottom: 0; text-align: center; }
 
 .contact-cards {
   display: grid;
@@ -899,12 +894,13 @@ em { font-style: italic; }
     padding-top: 60px;
   }
 
-  .hero { padding: 4rem 1.5rem 4rem; }
+  .hero { padding: 4rem 1.5rem; align-items: center; text-align: center; }
+  .hero-sub { margin: 0 auto 2rem; }
+  .hero-actions { justify-content: center; }
   .hero-title { font-size: clamp(2.75rem, 11vw, 4rem); }
-  .hero-sub { font-size: 0.975rem; }
   .hero-scroll { display: none; }
 
-  .section { padding: 4.5rem 1.5rem; }
+  .section { padding: 4rem 1.5rem; }
   .section-header { margin-bottom: 2.5rem; }
 
   .about-stats-block { grid-template-columns: 1fr 1fr; }
