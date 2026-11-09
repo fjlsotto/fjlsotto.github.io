@@ -1,32 +1,44 @@
-/* ===== NAVBAR scroll shadow ===== */
-const navbar = document.getElementById('navbar');
-window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 20);
-  highlightActiveSection();
-}, { passive: true });
+/* ===== DYNAMIC YEAR ===== */
+const yearEl = document.getElementById('year');
+if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-/* ===== HAMBURGER ===== */
+/* ===== SIDEBAR TOGGLE (mobile) ===== */
+const sidebar  = document.getElementById('sidebar');
+const overlay  = document.getElementById('sidebar-overlay');
 const hamburger = document.getElementById('hamburger');
-const navLinks  = document.getElementById('nav-links');
+
+function openSidebar() {
+  sidebar.classList.add('open');
+  overlay.classList.add('active');
+  hamburger.classList.add('open');
+  hamburger.setAttribute('aria-expanded', 'true');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeSidebar() {
+  sidebar.classList.remove('open');
+  overlay.classList.remove('active');
+  hamburger.classList.remove('open');
+  hamburger.setAttribute('aria-expanded', 'false');
+  document.body.style.overflow = '';
+}
 
 hamburger.addEventListener('click', () => {
-  const isOpen = navLinks.classList.toggle('open');
-  hamburger.classList.toggle('open', isOpen);
-  hamburger.setAttribute('aria-expanded', String(isOpen));
-  document.body.style.overflow = isOpen ? 'hidden' : '';
+  sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
 });
-navLinks.querySelectorAll('a').forEach(link => {
+
+overlay.addEventListener('click', closeSidebar);
+
+/* Close on nav link click (mobile) */
+document.querySelectorAll('.sidebar-link').forEach(link => {
   link.addEventListener('click', () => {
-    navLinks.classList.remove('open');
-    hamburger.classList.remove('open');
-    hamburger.setAttribute('aria-expanded', 'false');
-    document.body.style.overflow = '';
+    if (window.innerWidth <= 768) closeSidebar();
   });
 });
 
-/* ===== ACTIVE NAV ===== */
+/* ===== ACTIVE NAV HIGHLIGHTING ===== */
 const sections   = Array.from(document.querySelectorAll('section[id]'));
-const navAnchors = Array.from(navLinks.querySelectorAll('a'));
+const sidebarLinks = Array.from(document.querySelectorAll('.sidebar-link'));
 
 function highlightActiveSection() {
   const mid = window.scrollY + window.innerHeight / 3;
@@ -34,10 +46,12 @@ function highlightActiveSection() {
   for (const sec of sections) {
     if (sec.offsetTop <= mid) current = sec.id;
   }
-  navAnchors.forEach(a => {
+  sidebarLinks.forEach(a => {
     a.classList.toggle('active', a.getAttribute('href') === `#${current}`);
   });
 }
+
+window.addEventListener('scroll', highlightActiveSection, { passive: true });
 
 /* ===== EXPERIENCE — hover on desktop, click on mobile ===== */
 const expItems = Array.from(document.querySelectorAll('.exp-item'));
@@ -46,14 +60,12 @@ const isTouchDevice = () => window.matchMedia('(hover: none)').matches;
 expItems.forEach(item => {
   const summary = item.querySelector('.exp-summary');
 
-  // Click always toggles .open (for mobile & keyboard users)
   summary.addEventListener('click', () => {
     const wasOpen = item.classList.contains('open');
     expItems.forEach(i => i.classList.remove('open'));
     if (!wasOpen) item.classList.add('open');
   });
 
-  // On non-touch: hover also opens
   item.addEventListener('mouseenter', () => {
     if (!isTouchDevice()) item.classList.add('open');
   });
