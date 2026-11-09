@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- UPDATE: project title and description -->
+  <title>Project Title | Francis Jay Sotto</title>
+  <meta name="description" content="Brief one-line description of this project." />
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="stylesheet" href="project.css" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="proj-nav">
+    <div class="proj-nav-inner">
+      <a href="../../" class="proj-back">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+        Back to Portfolio
+      </a>
+      <a href="../../" class="nav-logo" aria-label="Home">FJ</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="proj-hero">
+    <!-- UPDATE: category badge (Machine Learning / Analytics / BI / Marketing Analytics) -->
+    <span class="proj-badge">Machine Learning</span>
+    <!-- UPDATE: project title -->
+    <h1 class="proj-title">Project Title</h1>
+    <!-- UPDATE: one-line tagline describing the problem solved -->
+    <p class="proj-tagline">A brief, punchy description of what this project does and the problem it solves.</p>
+    <div class="proj-meta">
+      <!-- UPDATE: actual GitHub repo URL -->
+      <a href="https://github.com/fjlsotto/REPO-NAME" target="_blank" rel="noopener" class="proj-meta-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        View on GitHub
+      </a>
+      <!-- UPDATE: completion date -->
+      <span class="proj-meta-date">Month Year</span>
+    </div>
+    <!-- UPDATE: tech stack tags -->
+    <div class="proj-stack">
+      <span>Python</span><span>scikit-learn</span><span>SQL</span><span>Jupyter</span>
+    </div>
+  </section>
+
+  <!-- ===== CONTENT ===== -->
+  <main class="proj-main">
+    <div class="proj-container">
+
+      <!-- OVERVIEW -->
+      <section class="proj-section">
+        <h2>Overview</h2>
+        <!-- UPDATE: 2-3 sentences on the business problem and your objective -->
+        <p>Describe the business context and problem you were solving. What motivated this project? Who are the stakeholders and what decision does this help them make?</p>
+        <p>Include the scope of the project — what was in and out of scope, and any constraints you were working with.</p>
+      </section>
+
+      <!-- DATA -->
+      <section class="proj-section">
+        <h2>Data</h2>
+        <!-- UPDATE: describe the dataset(s) used -->
+        <p>Describe the data source(s), size, and key features. What did the raw data look like and what preprocessing was required?</p>
+        <div class="proj-highlight-grid">
+          <!-- UPDATE: key data stats -->
+          <div class="proj-highlight">
+            <span class="highlight-num">XX,XXX</span>
+            <span class="highlight-label">Records</span>
+          </div>
+          <div class="proj-highlight">
+            <span class="highlight-num">XX</span>
+            <span class="highlight-label">Features</span>
+          </div>
+          <div class="proj-highlight">
+            <span class="highlight-num">X</span>
+            <span class="highlight-label">Data Sources</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- METHODOLOGY -->
+      <section class="proj-section">
+        <h2>Approach</h2>
+        <!-- UPDATE: steps taken, models tried, key decisions -->
+        <p>Walk through your methodology. What approach did you take and why? What models or techniques did you evaluate?</p>
+        <ol class="proj-steps">
+          <li><strong>Step 1 — Exploratory Data Analysis:</strong> Describe what you found.</li>
+          <li><strong>Step 2 — Feature Engineering:</strong> What features did you create or transform?</li>
+          <li><strong>Step 3 — Modeling:</strong> Which algorithms did you try and how did you select the final model?</li>
+          <li><strong>Step 4 — Evaluation:</strong> How did you measure success?</li>
+        </ol>
+      </section>
+
+      <!-- RESULTS -->
+      <section class="proj-section">
+        <h2>Results</h2>
+        <!-- UPDATE: key metrics and findings -->
+        <p>What were the key outcomes? Lead with the most impactful metric or finding.</p>
+        <div class="proj-highlight-grid">
+          <!-- UPDATE: result metrics -->
+          <div class="proj-highlight">
+            <span class="highlight-num">XX%</span>
+            <span class="highlight-label">Key Metric</span>
+          </div>
+          <div class="proj-highlight">
+            <span class="highlight-num">X.XX</span>
+            <span class="highlight-label">AUC / F1</span>
+          </div>
+          <div class="proj-highlight">
+            <span class="highlight-num">XX%</span>
+            <span class="highlight-label">Another Metric</span>
+          </div>
+        </div>
+        <!-- UPDATE: visualization or chart (optional — embed image or notebook output) -->
+        <div class="proj-viz-placeholder">
+          [ Visualization / chart goes here ]
+        </div>
+      </section>
+
+      <!-- TAKEAWAYS -->
+      <section class="proj-section">
+        <h2>Key Takeaways</h2>
+        <!-- UPDATE: what you learned, limitations, next steps -->
+        <ul class="proj-takeaways">
+          <li>What worked well and why.</li>
+          <li>What you'd do differently with more time or data.</li>
+          <li>Potential next steps or extensions of this work.</li>
+        </ul>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="proj-footer">
+    <div class="proj-container">
+      <a href="../../" class="proj-back">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+        Back to Portfolio
+      </a>
+      <!-- UPDATE: link to the next project if applicable -->
+      <a href="../next-project/" class="proj-next">
+        Next Project
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
